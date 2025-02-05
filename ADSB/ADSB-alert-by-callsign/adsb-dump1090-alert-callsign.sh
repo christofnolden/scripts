@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Parameter Konfiguration
-AIRCRAFT_JSON="URL-OF-DUMP1090-AIRCRAFT-JSON/aircraft.json"
+AIRCRAFT_JSON="URL-OF-DUMP1090-AIRCRAFT-JSON/aircraft.json" # Z.B. http://192.168.1.2/tar1090/data/aircraft.json
 PUSHOVER_USER="XXX"  # Pushover User Key
 PUSHOVER_TOKEN="XXX" # Pushover App Token
 TEMP_FILE="/tmp/aircraft_notifications.txt" # Zwischenspeicherung der gefundenen Aircraft zwecks Cooldown Alert
