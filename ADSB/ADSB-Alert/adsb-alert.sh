@@ -1,5 +1,12 @@
 #!/bin/bash
 
+# Debug Funktion zuerst definieren
+debug_print() {
+    if [ "$DEBUG" = true ]; then
+        echo "[DEBUG] $1"
+    fi
+}
+
 # Parameter Konfiguration
 AIRCRAFT_JSON="http://XXX.XXX.XXX/tar1090/data/aircraft.json" # Replace with your Hostname or IP
 PUSHOVER_USER="XXX" # Replace with your User Key
