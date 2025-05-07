@@ -12,7 +12,8 @@ AIRCRAFT_JSON="http://XXX.XXX.XXX/tar1090/data/aircraft.json" # Replace with you
 PUSHOVER_USER="XXX" # Replace with your User Key
 PUSHOVER_TOKEN="XXX" # Replace with your User Token
 TEMP_FILE="/tmp/aircraft_notifications.txt"
-SEARCH_PATTERNS=("CHX" "LIFELN" "RESQ" "JOKER" "SAREX" "AIRESC" "HUMMEL" "NATO" "ESSO" "SONIC" "MRPHY" "LIMIT" "BLOOD" "GRIFN" "DUKE" "SPADE") # The Callsign searchpatterns with wildcard
+SEARCH_PATTERNS=("CHX" "LIFELN" "RESQ" "GAMMED" "JOKER" "SAREX" "GAM" "AIRESC" "HUMMEL" "NATO" "ESSO" "SONIC" "MRPHY" "LIMIT" "BLOOD" "GRIFN" "DUKE" "SPADE") # The Callsign searchpatterns with wildcard
+# Erläuterungen zu Callsigns: LIMIT=CH53, SONIC=NH90
 NOTIFICATION_COOLDOWN=600 # Cooldown in seconds
 MAX_DISTANCE=32 # Distance in NM
 DEBUG=false
