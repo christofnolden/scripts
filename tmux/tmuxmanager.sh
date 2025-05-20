@@ -11,7 +11,9 @@ RESET="\033[0m"
 
 USER_NAME=$(whoami)
 TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
-NEW_SESSION_NAME="${USER_NAME}_${TIMESTAMP}"
+CLIENT_HOST=$(who am i | awk -F'[()]' '{print $2}')
+CLIENT_HOST=${CLIENT_HOST:-"local"}
+NEW_SESSION_NAME="${USER_NAME}@${CLIENT_HOST}_${TIMESTAMP}"
 
 function list_sessions() {
     echo -e "${CYAN}Aktuelle tmux Sessions:${RESET}"
